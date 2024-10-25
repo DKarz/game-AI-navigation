@@ -26,7 +26,6 @@ Object and obstacle navigation is perhaps the most challenging task. We include 
 <img src="media/player.png" alt="Image 1" width="35%" style="display: inline-block; margin-right: 10px;">
 <img src="media/enemy.png" alt="Image 2" width="35%" style="display: inline-block;">
 
-PICTURE HERE
 
 Initially, I tried to have a smaller observation space and combine one-hot encoding for vision and collision rays by overwriting vision by collision and switching an indicator.
 
@@ -42,11 +41,14 @@ Positive Rewards.
 To encourage the player to move in the direction of the player, we add a small bonus equal to the reduction of the distance to the player, i.e. ```reward += 0.01 * (old_distance - current_distance)``` if positive.
 
 If the central vision (long) ray, sees the player, we add a small reward ```reward += 1```
-If the agent gets unstuck it gets ```0.0001``` each frame. I chose a small value to prevent our agent from getting stuck-unstuck each other frame on purpose to get a reward.
+If the agent gets unstuck it gets ```0.1``` each frame. I chose a small value to prevent our agent from getting stuck-unstuck each other frame on purpose to get a reward.
 When the middle short ray is colliding with the player, we switch off the long vision rays and switch on an "is_damaging" indicator in the observation space. Each frame, the agent receives ```reward += damage_made * 50```, and once the player's HP is 0 we give  a large bonus ```reward += 300``` and restart the episode.
 
 Penalties.
 It is also import to discourage certain actions by adding a negative reward for inappropriate actions.
+If the distance between the target and the agent is more than 500(px) we subtract ```300``` from the total frame reward and ```50``` times how many times it has already been done during the training. If a timeout happens it gets a similar penalty.
+
+For each collision ray "firing" with an obstacle, the agent gets an increasing penalty ```reward-= 1 * iterations_stuck``` 
 
 
 
