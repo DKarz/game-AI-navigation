@@ -70,4 +70,4 @@ Penalties discourage unwanted behaviors:
 - Penalties for exiting the play area need fine-tuning; some experiments resulted in the agent “escaping” rather than colliding with obstacles.
 - Scaling rewards to the range [-1, 1] may be beneficial for stability.
 
-Let me know your thoughts or questions in the comments!
+
