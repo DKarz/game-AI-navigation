@@ -1,4 +1,10 @@
-# title: "Deep Reinforcement Learning for my Game Enemy AI" 
+title: "Deep Reinforcement Learning for my Game Enemy AI" 
 # author: Daniil Karzanov
 layout: post
 theme: minima  
+
+markdown: kramdown
+kramdown:
+  input: GFM          # Enables GitHub Flavored Markdown
+  syntax_highlighter_opts:
+    line_numbers: true
