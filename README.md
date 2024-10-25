@@ -33,6 +33,6 @@ TODO: about same vector for collision and vision
 Reward. 
 For each element in game, we define a ```_physics_process``` function that defines the logic at each frame of the game. Here, if the conditions are satisfied, the agent receives a positive reward for a reasonable action and a penalty for bad actions.
 x
-
+<img src="media/demo_obstacles.gif" alt="Image 2" width="35%" style="display: inline-block;">
 
 
