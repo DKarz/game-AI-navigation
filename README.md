@@ -30,15 +30,8 @@ Observations include:
 For obstacle navigation, the agent uses three short rays to detect nearby collisions and three long rays pointing forward to "see" objects at a distance.
 
 <div>
-  <figure style="display: inline-block; margin-right: 10px;">
-    <img src="media/player.png" alt="Player - Target" width="35%">
-    <figcaption>Player</figcaption>
-  </figure>
-  
-  <figure style="display: inline-block;">
-    <img src="media/enemy.png" alt="Enemy - Trainable AI agent" width="30%">
-    <figcaption>Enemy</figcaption>
-  </figure>
+  <img src="media/player.png" alt="Player" width="35%" style="display: inline-block; margin-right: 10px;">
+  <img src="media/enemy.png" alt="Enemy" width="30%" style="display: inline-block;">
 </div>
 
 ### Early Experiments
