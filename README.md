@@ -23,6 +23,9 @@ The agent also sees x and y coordinates of its current movement direction to hel
 To help it solve the task fo torch light avoidance, I also add the vector coming from the player's torch.
 
 Object and obstacle navigation is perhaps the most challenging task. We include three short rays to track if the agent colliding with an obstacle or with the player. We also have three long rays poiting straight to help the agent see objects in front of it.
+<img src="media/player.png" alt="Image 1" width="35%" style="display: inline-block; margin-right: 10px;">
+<img src="media/enemy.png" alt="Image 2" width="35%" style="display: inline-block;">
+
 PICTURE HERE
 
 TODO: about same vector for collision and vision
