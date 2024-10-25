@@ -38,6 +38,9 @@ For obstacle navigation, the agent uses three short rays to detect nearby collis
 I initially experimented with a minimal observation space, combining vision and collision ray information with one-hot encoding. However, balancing these indicators proved challenging.
 
 ---
+⠀⠀
+
+
 
 ### Reward Structure
 Each episode starts with random placement of the player and obstacles (0-3 obstacles per episode). If the agent strays too far or fails to reach the player within 15 seconds, the episode restarts. Proximity to the player pauses the timer, encouraging close engagement.
@@ -62,6 +65,9 @@ Penalties discourage unwanted behaviors:
 <div>
   <img src="media/demo_obstacles.gif" alt="Obstacle Navigation Demo" width="50%">
 </div>
+
+⠀⠀
+
 
 ---
 
