@@ -1,4 +1,4 @@
-# Game AI Navigation
+# Deep Reinforcement Learning for my Game Enemy AI
 ### Author: Daniil Karzanov
 
 This post shares my approach to training AI for enemy behavior in my Android game, covering the results, attempts, and challenges encountered.  
