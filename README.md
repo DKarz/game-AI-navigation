@@ -63,8 +63,11 @@ Penalties discourage unwanted behaviors:
   ```reward -= 1 * iterations_stuck```.
 
 <div>
-  <img src="media/demo_obstacles.gif" alt="Obstacle Navigation Demo" width="50%">
+  <img src="media/demo_obstacles.gif" alt="Player" width="35%" style="display: inline-block; margin-right: 10px;">
+  
+  <img src="media/demo2.gif" alt="Enemy" width="46%" style="display: inline-block;">
 </div>
+
 
 ⠀⠀
 
