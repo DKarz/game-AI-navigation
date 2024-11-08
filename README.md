@@ -56,6 +56,7 @@ Each in-game element has a `_physics_process` function, updated every frame, whe
 - **Unstuck Reward**: Minor reward (`0.1`) each frame to encourage breaking free from obstacles without exploiting the reward.
 - **Attack Success**: When in close proximity, the agent activates a damage indicator. Each frame while attacking, the agent receives a reward proportional to damage dealt (`reward += damage_made * 50`). Defeating the player yields a large bonus (`reward += 300`), then the episode restarts.
 
+**Obstacle Avoidance**
 <br/><br/>
 <div>
   <img src="media/demo_obstacles.gif" alt="Player" width="40%" style="display: inline-block; margin-right: 10px;">
@@ -75,7 +76,9 @@ Penalties discourage unwanted behaviors:
 
 <br/><br/>
 
-**Flashlight Avoidence:**
+
+
+**Flashlight Avoidance:**
 <div style="text-align: center;">
   <img src="media/light_avoidence.gif" width="40%" style="display: inline-block; margin-right: 10px;">
   <img src="media/entropy_plot.png" width="40%" style="display: inline-block;">
