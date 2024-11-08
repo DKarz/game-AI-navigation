@@ -57,9 +57,9 @@ Each in-game element has a `_physics_process` function, updated every frame, whe
 
 <br/><br/>
 <div>
-  <img src="media/demo_obstacles.gif" alt="Player" width="35%" style="display: inline-block; margin-right: 10px;">
+  <img src="media/demo_obstacles.gif" alt="Player" width="40%" style="display: inline-block; margin-right: 10px;">
   
-  <img src="media/demo2.gif" alt="Enemy" width="46%" style="display: inline-block;">
+  <img src="media/demo2.gif" alt="Enemy" width="53%" style="display: inline-block;">
 </div>
 
 <br/><br/>
@@ -75,11 +75,11 @@ Penalties discourage unwanted behaviors:
 <br/><br/>
 
 **Flashlight Avoidence:**
-<div>
-  <img src="media/light_avoidence.gif" width="35%" style="display: inline-block; margin-right: 10px;">
-  
-  <img src="media/entropy_plot.png" width="35%" style="display: inline-block;">
+<div style="text-align: center;">
+  <img src="media/light_avoidence.gif" width="40%" style="display: inline-block; margin-right: 10px;">
+  <img src="media/entropy_plot.png" width="40%" style="display: inline-block;">
 </div>
+
 
 
 <br/><br/>
