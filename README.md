@@ -55,6 +55,16 @@ Each in-game element has a `_physics_process` function, updated every frame, whe
 - **Unstuck Reward**: Minor reward (`0.1`) each frame to encourage breaking free from obstacles without exploiting the reward.
 - **Attack Success**: When in close proximity, the agent activates a damage indicator. Each frame while attacking, the agent receives a reward proportional to damage dealt (`reward += damage_made * 50`). Defeating the player yields a large bonus (`reward += 300`), then the episode restarts.
 
+<br/><br/>
+<div>
+  <img src="media/demo_obstacles.gif" alt="Player" width="35%" style="display: inline-block; margin-right: 10px;">
+  
+  <img src="media/demo2.gif" alt="Enemy" width="46%" style="display: inline-block;">
+</div>
+
+<br/><br/>
+
+
 ### Penalties
 Penalties discourage unwanted behaviors:
 - **Out of Range**: Penalty if the agent is too far from the player (`reward -= 300`) plus a multiple based on repeated violations.
@@ -62,16 +72,17 @@ Penalties discourage unwanted behaviors:
 - **Collision with Obstacles**: Penalty for each frame of collision, increasing with `iterations_stuck`:  
   ```reward -= 1 * iterations_stuck```.
 
+<br/><br/>
+
+**Flashlight Avoidence:**
 <div>
-  <img src="media/demo_obstacles.gif" alt="Player" width="35%" style="display: inline-block; margin-right: 10px;">
+  <img src="media/light_avoidence.gif" width="35%" style="display: inline-block; margin-right: 10px;">
   
-  <img src="media/demo2.gif" alt="Enemy" width="46%" style="display: inline-block;">
+  <img src="media/entropy_plot.png" width="35%" style="display: inline-block;">
 </div>
 
 
-⠀⠀
-
-
+<br/><br/>
 ---
 
 ## Additional Notes
