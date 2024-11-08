@@ -81,13 +81,14 @@ Penalties discourage unwanted behaviors:
 **Flashlight Avoidance:**
 <div style="text-align: center;">
   <img src="media/light_avoidence.gif" width="40%" style="display: inline-block; margin-right: 10px;">
-  <img src="media/entropy_plot.png" width="40%" style="display: inline-block;">
+<!--   <img src="media/entropy_plot.png" width="40%" style="display: inline-block;"> -->
 </div>
 
 
 We need to include information about the direction of the player’s flashlight, *f*, in the observation space. When the agent is near the player, it should be rewarded for avoiding the flashlight beam or penalized for moving into it. To achieve this, we can use the reverse of the agent's current normalized direction vector, *-d*. By taking the dot product of *-d* and *f*, we can check if the angle between these vectors is less than *π/12*; if so, the player’s flashlight is pointing at the agent, and the agent should be penalized. If the flashlight is pointing away from the agent, we add a positive reward.
 
-To analyze the learned policy, we examine various plots in TensorBoard. The entropy loss, for instance, is particularly important as it indicates exploration stability. A steady decrease in entropy over time suggests that the agent is converging on a consistent policy, while high variance may imply it’s still exploring.
+To analyze the learned policy, we examine various plots in TensorBoard. The entropy loss, for instance, is particularly important as it indicates exploration stability.
+
 
 
 
