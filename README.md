@@ -3,7 +3,7 @@
 ## Author: Daniil Karzanov
 
 This post shares my approach to training AI for enemy behavior in my Android game, covering the results, attempts, and challenges encountered.  
-**Note**: The game is currently in closed testing and will be published on Google Play soon. If you’re interested in becoming a tester, feel free to contact me. Meanwhile, check out the [TRAILER VIDEO](https://youtu.be/o0IWvtH6mIU)!
+**Note**: The game was recently [published on the Google Play Store](https://play.google.com/store/apps/details?id=denezio.game1), where Android users can download it. Check out the [TRAILER VIDEO](https://youtu.be/o0IWvtH6mIU)!
 
 ---
 
